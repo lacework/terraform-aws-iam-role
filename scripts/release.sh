@@ -8,8 +8,10 @@
 #
 set -eou pipefail
 
-readonly project_name=terraform-aws-iam-role
 readonly org_name=lacework
+readonly project_name=terraform-aws-iam-role
+readonly git_user="Salim Afiune Maya"
+readonly git_email="afiune@lacework.net"
 VERSION=$(cat VERSION)
 
 usage() {
@@ -224,6 +226,8 @@ bump_version() {
   fi
 
   log "commiting and pushing the version bump to github"
+  git config --global user.email $git_email 
+  git config --global user.name $git_user
   git add VERSION
   git commit -m "version bump to v$VERSION"
   git push origin master
