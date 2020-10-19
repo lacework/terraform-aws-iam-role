@@ -3,6 +3,6 @@
 # terraform-aws-iam-role
 
 [![GitHub release](https://img.shields.io/github/release/lacework/terraform-aws-iam-role.svg)](https://github.com/lacework/terraform-aws-iam-role/releases/)
-[![CircleCI status](https://circleci.com/gh/lacework/terraform-aws-iam-role.svg?style=shield)](https://circleci.com/gh/lacework/terraform-aws-iam-role)
+[![CircleCI status](https://circleci.com/gh/lacework/terraform-aws-iam-role/tree/master.svg?style=shield)](https://circleci.com/gh/lacework/terraform-aws-iam-role/tree/master)
 
-A Terraform module that creates a cross-account IAM role to integrate Lacework and AWS accounts
+Terraform module that creates a cross-account IAM role to integrate Lacework and AWS accounts.
