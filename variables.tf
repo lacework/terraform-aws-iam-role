@@ -21,3 +21,9 @@ variable "create" {
   default     = true
   description = "Set to false to prevent the module from creating any resources"
 }
+
+variable "tags" {
+  type        = map(string)
+  description = "A map/dictionary of Tags to be assigned to created resources"
+  default     = {}
+}
