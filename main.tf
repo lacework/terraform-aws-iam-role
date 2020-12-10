@@ -27,4 +27,5 @@ resource "aws_iam_role" "lacework_iam_role" {
   count              = var.create ? 1 : 0
   name               = var.iam_role_name
   assume_role_policy = data.aws_iam_policy_document.lacework_assume_role_policy[count.index].json
+  tags               = var.tags
 }
