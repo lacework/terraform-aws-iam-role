@@ -1,6 +1,6 @@
 provider "aws" {}
 
 module "lacework_iam_role" {
-  source = "../../"
+  source = "lacework/iam-role/aws"
   create = false
 }
