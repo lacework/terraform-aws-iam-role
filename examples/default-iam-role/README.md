@@ -2,6 +2,16 @@
 This example creates an IAM Role used to store IAM policies required to integrate AWS and Lacework.
 
 ```
+terraform {
+  required_providers {
+    lacework = {
+      source = "lacework/lacework"
+    }
+  }
+}
+
+provider "lacework" {}
+
 provider "aws" {}
 
 module "lacework_iam_role" {
