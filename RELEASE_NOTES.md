@@ -1,7 +1,7 @@
 # Release Notes
-Another day, another release. These are the release notes for the version `v0.1.2`.
+Another day, another release. These are the release notes for the version `v0.1.3`.
 
-## Features
-* feat(tags): Added the ability to tag created resources (#6) (Alan Nix)([ea84f9a](https://github.com/lacework/terraform-aws-iam-role/commit/ea84f9ad07c443669b07fc1d6cd0bd6dd2eca715))
+## Documentation Updates
+* docs: updating all examples (#10) (Scott Ford)([8e42c2d](https://github.com/lacework/terraform-aws-iam-role/commit/8e42c2d7d2acc3e95a104596bfc2bf29b32a323e))
 ## Other Changes
-* ci: new release.sh release notes generation (#7) (Salim Afiune)([25ca284](https://github.com/lacework/terraform-aws-iam-role/commit/25ca2844184d86e5e4f981af0018dcab50088b7b))
+* ci: send slack notifications to team alias ⭐ (#9) (Salim Afiune)([23a1327](https://github.com/lacework/terraform-aws-iam-role/commit/23a13273cdf5eebda35459fab81532cdcfd5be70))
