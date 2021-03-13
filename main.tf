@@ -1,3 +1,7 @@
+locals {
+  iam_role_name = length(var.iam_role_name) > 0 ? var.iam_role_name : "lw-iam-${random_id.uniq.hex}"
+}
+
 resource "random_id" "uniq" {
   byte_length = 4
 }
@@ -29,7 +33,7 @@ data "aws_iam_policy_document" "lacework_assume_role_policy" {
 
 resource "aws_iam_role" "lacework_iam_role" {
   count              = var.create ? 1 : 0
-  name               = var.iam_role_name
+  name               = local.iam_role_name
   assume_role_policy = data.aws_iam_policy_document.lacework_assume_role_policy[count.index].json
   tags               = var.tags
 }

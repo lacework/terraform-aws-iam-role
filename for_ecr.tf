@@ -40,6 +40,6 @@ resource "aws_iam_policy" "ecr_cross_account_policy" {
 
 resource "aws_iam_role_policy_attachment" "lacework_ecr_cross_account_iam_role_policy" {
   count      = var.for_ecr && var.create ? 1 : 0
-  role       = var.iam_role_name
+  role       = local.iam_role_name
   policy_arn = aws_iam_policy.ecr_cross_account_policy[count.index].arn
 }

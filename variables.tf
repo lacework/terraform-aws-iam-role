@@ -1,6 +1,6 @@
 variable "iam_role_name" {
   type        = string
-  default     = "lacework_iam_role"
+  default     = ""
   description = "The IAM role name"
 }
 
