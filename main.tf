@@ -1,3 +1,7 @@
+resource "random_id" "uniq" {
+  byte_length = 4
+}
+
 resource "random_string" "external_id" {
   count            = var.create ? 1 : 0
   length           = var.external_id_length

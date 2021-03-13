@@ -1,17 +1,7 @@
 # Custom IAM Role
 This example changes the default name of the IAM Role to a custom name.
 
-```
-terraform {
-  required_providers {
-    lacework = {
-      source = "lacework/lacework"
-    }
-  }
-}
-
-provider "lacework" {}
-
+```hcl
 provider "aws" {}
 
 module "lacework_iam_role" {

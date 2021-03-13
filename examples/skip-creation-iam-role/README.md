@@ -1,16 +1,7 @@
 # Skip creation of IAM Role
 This example provides an example of using the `create` input set to `false` which will skip creating the IAM Role.
 
-```
-terraform {
-  required_providers {
-    lacework = {
-      source = "lacework/lacework"
-    }
-  }
-}
-provider "lacework" {}
-
+```hcl
 provider "aws" {}
 
 module "lacework_iam_role" {

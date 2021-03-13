@@ -27,3 +27,15 @@ variable "tags" {
   description = "A map/dictionary of Tags to be assigned to created resources"
   default     = {}
 }
+
+variable "for_ecr" {
+  type        = bool
+  default     = false
+  description = "If set to true, configure the IAM role for ECR integration"
+}
+
+variable "ecr_registries" {
+  type        = list(string)
+  default     = []
+  description = "List of ECR registries to grant access to"
+}
