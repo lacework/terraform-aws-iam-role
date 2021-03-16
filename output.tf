@@ -4,7 +4,7 @@ output "created" {
 }
 
 output "name" {
-  value       = var.iam_role_name
+  value       = local.iam_role_name
   description = "IAM Role name"
 }
 
