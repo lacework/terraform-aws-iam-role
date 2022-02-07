@@ -4,7 +4,7 @@ output "created" {
 }
 
 output "name" {
-  value       = local.iam_role_name
+  value       = var.create ? aws_iam_role.lacework_iam_role[0].name : local.iam_role_name
   description = "IAM Role name"
 }
 
