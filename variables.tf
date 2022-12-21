@@ -22,6 +22,12 @@ variable "create" {
   description = "Set to false to prevent the module from creating any resources"
 }
 
+variable "permission_boundary_arn" {
+  type        = string
+  default     = null
+  description = "Optional - ARN of the policy that is used to set the permissions boundary for the role."
+}
+
 variable "tags" {
   type        = map(string)
   description = "A map/dictionary of Tags to be assigned to created resources"
