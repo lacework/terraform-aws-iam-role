@@ -1,12 +1,8 @@
 # Release Notes
-Another day, another release. These are the release notes for the version `v0.2.3`.
+Another day, another release. These are the release notes for the version `v0.3.0`.
 
-## Bug Fixes
-* fix: use resource name attribute instead of string for name output (#25) (Tim Arenz)([c977369](https://github.com/lacework/terraform-aws-iam-role/commit/c977369d8d90dfe1f7bf4d52454c5f983c0a885b))
-## Documentation Updates
-* docs: Add contributing documentation (#24) (Darren)([0eca722](https://github.com/lacework/terraform-aws-iam-role/commit/0eca72210b1fc6a8164a2677a9e7e5c22caa7ada))
+## Features
+* feat: add permissions_boundary variable (#33) (Victor Knell)([105753b](https://github.com/lacework/terraform-aws-iam-role/commit/105753b1f5a109e50e793eeeb7d6fbdf14a2a5a9))
+* feat: deprecate support for Terraform 0.12 and 0.13 (#31) (Darren)([ff8c112](https://github.com/lacework/terraform-aws-iam-role/commit/ff8c11249bfa905cb67c95e53c699231ff7fab12))
 ## Other Changes
-* chore: update .terraform entry in .gitignore to exclude lock files (#29) (Salim Afiune)([3ea3e77](https://github.com/lacework/terraform-aws-iam-role/commit/3ea3e774212b8cc4390064caad30fb2e0bd6c8ef))
-* chore: update PR template (#27) (Darren)([307dee1](https://github.com/lacework/terraform-aws-iam-role/commit/307dee164e4681df00622655ea6229acbe438286))
-* chore: version bump to v0.2.3-dev (Lacework)([e9914c9](https://github.com/lacework/terraform-aws-iam-role/commit/e9914c90ccb0dc5e4ac0377e9353d57d93c1942c))
-* ci: sign lacework-releng commits (#23) (Salim Afiune)([406ae5b](https://github.com/lacework/terraform-aws-iam-role/commit/406ae5b8abb961eab5ac71cbe26f7c66bbacadee))
+* ci: version bump to v0.2.4-dev (Lacework)([8b34d2d](https://github.com/lacework/terraform-aws-iam-role/commit/8b34d2d20a258e3765503ae67b7cf96db7c88a29))
