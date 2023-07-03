@@ -6,7 +6,6 @@ variable "iam_role_name" {
 
 variable "lacework_aws_account_id" {
   type        = string
-  default     = "434813966438"
   description = "The Lacework AWS account that the IAM role will grant access"
 }
 
