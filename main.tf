@@ -6,10 +6,12 @@ resource "random_id" "uniq" {
   byte_length = 4
 }
 
+data "aws_caller_identity" "current" {}
+
 resource "lacework_external_id" "aws_iam_external_id" {
   count      = var.create ? 1 : 0
   csp        = "aws"
-  account_id = var.lacework_aws_account_id
+  account_id = data.aws_caller_identity.current.account_id
 }
 
 data "aws_iam_policy_document" "lacework_assume_role_policy" {
