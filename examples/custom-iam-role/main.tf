@@ -1,6 +1,4 @@
-provider "aws" {
-    profile = "testing"
-}
+provider "aws" {}
 
 provider "lacework" {}
 
