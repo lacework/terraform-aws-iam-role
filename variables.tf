@@ -10,12 +10,6 @@ variable "lacework_aws_account_id" {
   description = "The Lacework AWS account that the IAM role will grant access"
 }
 
-variable "external_id_length" {
-  type        = number
-  default     = 16
-  description = "The length of the external ID to generate"
-}
-
 variable "create" {
   type        = bool
   default     = true

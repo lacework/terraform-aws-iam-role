@@ -14,6 +14,6 @@ output "arn" {
 }
 
 output "external_id" {
-  value       = var.create ? random_string.external_id[0].result : ""
+  value       = var.create ? lacework_external_id.aws_iam_external_id[0].v2 : ""
   description = "The External ID configured into the IAM role"
 }
