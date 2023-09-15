@@ -6,10 +6,12 @@ resource "random_id" "uniq" {
   byte_length = 4
 }
 
-resource "random_string" "external_id" {
-  count            = var.create ? 1 : 0
-  length           = var.external_id_length
-  override_special = "=,.@:/-"
+data "aws_caller_identity" "current" {}
+
+resource "lacework_external_id" "aws_iam_external_id" {
+  count      = var.create ? 1 : 0
+  csp        = "aws"
+  account_id = data.aws_caller_identity.current.account_id
 }
 
 data "aws_iam_policy_document" "lacework_assume_role_policy" {
@@ -26,7 +28,7 @@ data "aws_iam_policy_document" "lacework_assume_role_policy" {
     condition {
       test     = "StringEquals"
       variable = "sts:ExternalId"
-      values   = [random_string.external_id[count.index].result]
+      values   = [lacework_external_id.aws_iam_external_id[count.index].v2]
     }
   }
 }

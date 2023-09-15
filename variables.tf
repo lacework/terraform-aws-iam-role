@@ -13,7 +13,7 @@ variable "lacework_aws_account_id" {
 variable "external_id_length" {
   type        = number
   default     = 16
-  description = "The length of the external ID to generate"
+  description = "**Deprecated** - Will be removed on our next major release v1.0.0"
 }
 
 variable "create" {
