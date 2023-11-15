@@ -22,7 +22,7 @@ data "aws_iam_policy_document" "lacework_assume_role_policy" {
 
     principals {
       type        = "AWS"
-      identifiers = ["arn:aws:iam::${var.lacework_aws_account_id}:root"]
+      identifiers = ["arn:aws:iam::${var.lacework_aws_account_id}:role/lacework-platform"]
     }
 
     condition {
