@@ -1,7 +1,9 @@
 # Release Notes
-Another day, another release. These are the release notes for the version `v0.4.1`.
+Another day, another release. These are the release notes for the version `v0.4.2`.
 
-## Bug Fixes
-* fix: pin lacework provider version ~> 1.15 (#42) (Salim Afiune)([719e6a9](https://github.com/lacework/terraform-aws-iam-role/commit/719e6a9522b9ad7319c5447d276a875b69aa4839))
+## Refactor
+* refactor(role): update to use Lacework external IAM role (#45) (Timothy MacDonald)([105b3f9](https://github.com/lacework/terraform-aws-iam-role/commit/105b3f96dfc86fa7375799253298a5b67cc2f4a9))
+## Documentation Updates
+* docs(readme): add terraform docs automation (#44) (Timothy MacDonald)([de7aa0e](https://github.com/lacework/terraform-aws-iam-role/commit/de7aa0ecc6199905ad25879806c9cde3cce0b570))
 ## Other Changes
-* ci: version bump to v0.4.1-dev (Lacework)([6524b94](https://github.com/lacework/terraform-aws-iam-role/commit/6524b949b0cf8c41748e2a6daffd41c639825bd4))
+* ci: version bump to v0.4.2-dev (Lacework)([1bc7093](https://github.com/lacework/terraform-aws-iam-role/commit/1bc709324a22dce2e5a2a07eebd9ee599f1d6d52))
