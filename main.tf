@@ -1,5 +1,8 @@
 locals {
   iam_role_name = length(var.iam_role_name) > 0 ? var.iam_role_name : "lw-iam-${random_id.uniq.hex}"
+  version_file   = "${abspath(path.module)}/VERSION"
+  module_name    = basename(abspath(path.module))
+  module_version = fileexists(local.version_file) ? file(local.version_file) : ""
 }
 
 resource "random_id" "uniq" {
@@ -39,4 +42,9 @@ resource "aws_iam_role" "lacework_iam_role" {
   assume_role_policy   = data.aws_iam_policy_document.lacework_assume_role_policy[count.index].json
   permissions_boundary = var.permission_boundary_arn
   tags                 = var.tags
+}
+
+data "lacework_metric_module" "lwmetrics" {
+  name    = local.module_name
+  version = local.module_version
 }
