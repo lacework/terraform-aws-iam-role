@@ -1,7 +1,7 @@
 locals {
   iam_role_name = length(var.iam_role_name) > 0 ? var.iam_role_name : "lw-iam-${random_id.uniq.hex}"
   version_file   = "${abspath(path.module)}/VERSION"
-  module_name    = basename(abspath(path.module))
+  module_name    = "terraform-aws-iam-role"
   module_version = fileexists(local.version_file) ? file(local.version_file) : ""
 }
 
