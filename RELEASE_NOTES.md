@@ -1,6 +1,6 @@
 # Release Notes
-Another day, another release. These are the release notes for the version `v0.4.3`.
+Another day, another release. These are the release notes for the version `v0.4.4`.
 
 ## Other Changes
-* chore: add lacework_metric_module datasource (#47) (Darren)([224d10f](https://github.com/lacework/terraform-aws-iam-role/commit/224d10f95427c717efb29327416c90ea84812133))
-* ci: version bump to v0.4.3-dev (Lacework)([e8ccbb4](https://github.com/lacework/terraform-aws-iam-role/commit/e8ccbb485f9a02d2a3859b2132970b53c8a9c15a))
+* chore: set local var module name (#49) (Darren)([728c1aa](https://github.com/lacework/terraform-aws-iam-role/commit/728c1aaa04765e8ed7c3be9acd41a12f2bc5c457))
+* ci: version bump to v0.4.4-dev (Lacework)([90345cb](https://github.com/lacework/terraform-aws-iam-role/commit/90345cb315bdd3bbbec9e228ffe179e8c854146f))
